@@ -13,6 +13,8 @@ class Game:
         #initialiation of the variables
         self.running = True
         self.screen = pygame.display.set_mode((600, 800))
+        pygame.display.set_caption('Galaxian')
+        pygame.display.set_icon(pygame.image.load('./assets/textures/ship/ship0.png'))
         self.clock = pygame.time.Clock()
         self.state = "Menu"
         self.time = time()
